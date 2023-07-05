@@ -159,7 +159,7 @@ body input, body h1, body h3, body a, body span {
   z-index: 1;
 }
 #app #app-background #app-background-image {
-  background-image: url("https://xatimg.com/image/R9SdwMjU62e0.png?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80");
+  background-image: url("https://i.imgur.com/8Ey5SOC.gif?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80");
   height: 100%;
   transition: filter 250ms, transform 250ms;
   width: 100%;
@@ -710,15 +710,12 @@ body input, body h1, body h3, body a, body span {
 }
 .toggle-play,
 .toggle-play i {
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-right: 30px solid var(--border);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: rotate(180deg);
 }
 
 .toggle-play {
@@ -728,15 +725,15 @@ body input, body h1, body h3, body a, body span {
   z-index: 12000;
   border: none;
   outline: none;
-  background: none;
+  background: var(--border);
   color: var(--light);
-  box-shadow: none;
+  box-shadow: 0 0 0 5px #ffffff, 0 0 30px rgba(0, 0, 0, .2);
   transition: .2s;
 }
 
 .toggle-play:hover {
   color: var(--shadow);
-  border-right: 30px solid var(--shadow);
+  box-shadow: 0 0 0 10px #000000, 0 0 30px rgba(0, 0, 0, .2);
   cursor: pointer;
 }
 
@@ -744,14 +741,10 @@ body input, body h1, body h3, body a, body span {
   font-size: 24px;
   color: white;
 }
-
 .fa {
   font-size: 24px;
 }
 
-#sound:before {
-  content: "";
+.fa-music {
+  color: red;
 }
-
-
-
